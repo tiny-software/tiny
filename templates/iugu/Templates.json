@@ -1,0 +1,31 @@
+[
+  {
+    "app_source": "iugu",
+    "app_target": "tinyerp",
+    "filters": [[{"field": "status", "condition": "equal", "value": "paid"}]],
+    "mapper": [
+      {"key": "cliente.nome", "content": "{{payer.name}}"},
+      {"key": "cliente.cpf_cnpj", "content": "{{payer.cpf_cnpj}}"},
+      {"key": "cliente.endereco", "content": "{{payer.address.street}}"},
+      {"key": "cliente.numero", "content": "{{payer.address.number}}"},
+      {"key": "cliente.bairro", "content": "{{payer.address.district}}"},
+      {"key": "cliente.cep", "content": "{{payer.address.zip_code}}"},
+      {"key": "cliente.cidade", "content": "{{payer.address.city}}"},
+      {"key": "cliente.uf", "content": "{{payer.address.state}}"},
+      {"key": "cliente.fone", "content": "{{payer.phone}}"},
+      {"key": "cliente.email", "content": "{{payer.email}}"},
+      {"key": "servico.descricao", "content": "{{items.descriptions}}"},
+      {"key": "servico.valor_servico", "content": "{{total_cents/100.0}}"}
+    ],
+    "trigger_key": "new_transactions",
+    "action_key": "add_nfse",
+    "name": {
+      "pt_BR": "A cada pagamento aprovado na IUGU incluir uma NFS-e no TinyERP",
+      "en": "For every approved payment on IUGU, generate a NFS-e on TinyERP"
+    },
+    "description": {
+      "why_integrate": [{"pt_BR": "", "en": ""}],
+      "how_it_works": [{"pt_BR": "", "en": ""}]
+    }
+  }
+]

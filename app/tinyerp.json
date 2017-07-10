@@ -1,0 +1,40 @@
+{
+  "name": "TinyERP",
+  "app_id": "tinyerp",
+  "color": "",
+  "description": {
+     "pt_BR": "TinyERP...",
+     "en": "O TinyERP..."
+    },
+  "website": "https://www.tiny.com.br/",
+  "signup_url": "https://www.tiny.com.br/site/precos",
+  "api_base_uri": {
+    "production": {
+      "uri": "https://api.tiny.com.br/api2/",
+      "label": "Produção",
+      "default": true
+    }
+  },
+  "authentication": {
+    "ping_request": {
+      "method_name": "contatos.pesquisa.php?formato=JSON"
+      },
+    "status": {
+      "field": "retorno.status",
+      "value": "Erro"
+    },
+    "type": "pass_through_query_string",
+    "fields": [
+      {"name": "token", "label": "Token API", "type": "text", "validations": [{"name": "max_length", "value": 40}]}
+    ],
+    "tutorial": {
+      "link": "Onde encontrar o Token API no TinyERP ?",
+      "steps": [
+        {
+          "title": {"pt_BR": "Passo 1", "en": ""},
+          "content": {"pt_BR": "Acesse TinyERP...", "en": ""}
+        }
+      ]
+    }
+  }
+}

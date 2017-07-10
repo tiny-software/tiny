@@ -1,0 +1,235 @@
+{
+  "name": {
+    "pt_BR": "adicionar uma NFS-e",
+    "en": "add a NFS-e"
+  },
+  "action_key": "add_nfse",
+  "description": {
+    "pt_BR": "adicionar uma NFS-e no TinyERP",
+    "en": "add a NFS-e in TinyERP"
+  },
+  "action_fields": {
+    "fields": [
+      {
+        "key": "cliente.nome",
+        "name": {"pt_BR": "nome do cliente", "en": "client name"},
+        "description": {
+          "pt_BR": "Nome do cliente.",
+          "en": "Client name."
+        },
+        "required": true,
+        "visible": true,
+        "advanced": false,
+        "field_type": "custom",
+        "data_type": "string",
+        "not_include_field_in_request": true,
+        "max": 80
+      },
+      {
+        "key": "cliente.cpf_cnpj",
+        "name": {"pt_BR": "cpf/cnpj do cliente", "en": "client document number"},
+        "description": {
+          "pt_BR": "CPF/CNPJ do cliente.",
+          "en": "Client document number."
+        },
+        "required": false,
+        "visible": true,
+        "advanced": false,
+        "field_type": "custom",
+        "data_type": "string",
+        "not_include_field_in_request": true,
+        "max": 18
+      },
+      {
+        "key": "cliente.endereco",
+        "name": {"pt_BR": "endereço do cliente", "en": "client address street"},
+        "description": {
+          "pt_BR": "Endereço do cliente.",
+          "en": "Client address street."
+        },
+        "required": false,
+        "visible": true,
+        "advanced": false,
+        "field_type": "custom",
+        "data_type": "string",
+        "not_include_field_in_request": true,
+        "max": 100
+      },
+      {
+        "key": "cliente.numero",
+        "name": {"pt_BR": "número do endereço do cliente", "en": "client address street number"},
+        "description": {
+          "pt_BR": "Número do endereço do cliente.",
+          "en": "Client address street number."
+        },
+        "required": false,
+        "visible": true,
+        "advanced": false,
+        "field_type": "custom",
+        "data_type": "string",
+        "not_include_field_in_request": true,
+        "max": 10
+      },
+      {
+        "key": "cliente.complemento",
+        "name": {"pt_BR": "complemento do endereço do cliente", "en": "client address complement"},
+        "description": {
+          "pt_BR": "Complemento do endereço do cliente.",
+          "en": "Client address complement."
+        },
+        "required": false,
+        "visible": true,
+        "advanced": false,
+        "field_type": "custom",
+        "data_type": "string",
+        "not_include_field_in_request": true,
+        "max": 100
+      },
+      {
+        "key": "cliente.bairro",
+        "name": {"pt_BR": "bairro do endereço do cliente", "en": "client address neighborhood"},
+        "description": {
+          "pt_BR": "Bairro do endereço do cliente.",
+          "en": "Client address neighborhood."
+        },
+        "required": false,
+        "visible": true,
+        "advanced": false,
+        "field_type": "custom",
+        "data_type": "string",
+        "not_include_field_in_request": true,
+        "max": 40
+      },
+      {
+        "key": "cliente.cep",
+        "name": {"pt_BR": "cep do endereço do cliente", "en": "client address zip code"},
+        "description": {
+          "pt_BR": "Cep do endereço do cliente.",
+          "en": "Client address zip code."
+        },
+        "required": false,
+        "visible": true,
+        "advanced": false,
+        "field_type": "custom",
+        "data_type": "string",
+        "not_include_field_in_request": true,
+        "max": 10
+      },
+      {
+        "key": "cliente.cidade",
+        "name": {"pt_BR": "cidade do endereço do cliente", "en": "client address city"},
+        "description": {
+          "pt_BR": "Cidade do endereço do cliente.",
+          "en": "Client address city."
+        },
+        "required": false,
+        "visible": true,
+        "advanced": false,
+        "field_type": "custom",
+        "data_type": "string",
+        "not_include_field_in_request": true,
+        "max": 30
+      },
+      {
+        "key": "cliente.uf",
+        "name": {"pt_BR": "uf do endereço do cliente", "en": "client address state"},
+        "description": {
+          "pt_BR": "UF do endereço do cliente.",
+          "en": "Client address state."
+        },
+        "required": false,
+        "visible": true,
+        "advanced": false,
+        "field_type": "custom",
+        "data_type": "string",
+        "not_include_field_in_request": true,
+        "max": 2
+      },
+      {
+        "key": "cliente.fone",
+        "name": {"pt_BR": "fone do cliente", "en": "client phone"},
+        "description": {
+          "pt_BR": "Fone do cliente.",
+          "en": "Client phone."
+        },
+        "required": false,
+        "visible": true,
+        "advanced": false,
+        "field_type": "custom",
+        "data_type": "string",
+        "not_include_field_in_request": true,
+        "max": 40
+      },
+      {
+        "key": "cliente.email",
+        "name": {"pt_BR": "e-mail do cliente", "en": "client e-mail"},
+        "description": {
+          "pt_BR": "E-mail do cliente.",
+          "en": "Client e-mail."
+        },
+        "required": false,
+        "visible": true,
+        "advanced": false,
+        "field_type": "custom",
+        "data_type": "string",
+        "not_include_field_in_request": true,
+        "max": 100
+      },
+      {
+        "key": "servico.descricao",
+        "name": {"pt_BR": "descrição do serviço", "en": "service description"},
+        "description": {
+          "pt_BR": "Descrição do serviço",
+          "en": "Service description"
+        },
+        "required": true,
+        "visible": true,
+        "advanced": false,
+        "field_type": "custom_textarea",
+        "data_type": "string",
+        "not_include_field_in_request": true
+      },
+      {
+        "key": "servico.valor_servico",
+        "name": {"pt_BR": "valor do serviço", "en": "service price"},
+        "description": {
+          "pt_BR": "Valor do serviço",
+          "en": "Service price"
+        },
+        "required": true,
+        "visible": true,
+        "advanced": false,
+        "field_type": "custom",
+        "data_type": "decimal",
+        "not_include_field_in_request": true
+      },
+      {
+        "key": "servico.descontar_iss_total",
+        "name": {"pt_BR": "Descontar ISS (ISS Retido)", "en": "discount iss"},
+        "description": {
+          "pt_BR": "Descontar iss do total do serviço",
+          "en": "Discount iss from the service total price"
+        },
+        "required": true,
+        "visible": true,
+        "advanced": false,
+        "field_type": "dropdown",
+        "data_type": "string",
+        "not_include_field_in_request": true,
+        "list" : {
+          "type": "local",
+          "data": [
+            {"label": "Sim", "value": "S"},
+            {"label": "Não", "value": "N"}
+          ]
+        }
+      }
+    ]
+  },
+  "request": {
+    "method_name": "nota.servico.incluir.php?formato=JSON&nota=\"{\"nota_servico\":{\"cliente\":{\"nome\":{cliente.nome},\"cpf_cnpj\":{cliente.cpf_cnpj},\"endereco\":{cliente.endereco},\"numero\":{cliente.numero},\"complemento\":{cliente.complemento}},\"servico\":{\"descricao\":{servico.descricao},\"valor_servico\":{servico.valor_servico},\"descontar_iss_total\":{servico.descontar_iss_total}}}}\"",
+    "response_field": ["retorno.registros"],
+    "error_fields": ["retorno.registros.registro.erros.erro"],
+    "json_api": true
+  }
+}
