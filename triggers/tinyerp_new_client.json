@@ -1,0 +1,138 @@
+{
+  "name": {
+    "pt_BR": "novo cliente adicionado",
+    "en": "new client added"
+  },
+  "trigger_key": "new_client",
+  "description": {
+    "pt_br": "Para cada novo cliente adicionado",
+    "en": "For each new client added"
+  },
+  "trigger_fields": {
+    "type": "local",
+    "fields": [
+      {
+        "key": "contato.id",
+        "name": {"pt_BR": "id do cliente", "en": "client id"},
+        "description": {"pt_BR": "id do cliente", "en": "client id"},
+        "field_type": "integer"
+      },
+      {
+        "key": "contato.codigo",
+        "name": {"pt_BR": "codigo do cliente", "en": "client code"},
+        "description": {"pt_BR": "codigo do cliente", "en": "client code"},
+        "field_type": "string"
+      },
+      {
+        "key": "contato.nome",
+        "name": {"pt_BR": "nome do cliente", "en": "client name"},
+        "description": {"pt_BR": "nome do cliente", "en": "client name"},
+        "field_type": "string"
+      },
+      {
+        "key": "contato.tipo_pessoa",
+        "name": {"pt_BR": "tipo de pessoa do cliente", "en": "client juridical type"},
+        "description": {"pt_BR": "tipo de pessoa do cliente", "en": "client juridical type"},
+        "field_type": "string"
+      },
+      {
+        "key": "contato.fantasia",
+        "name": {"pt_BR": "nome fantasia do cliente", "en": "client company name"},
+        "description": {"pt_BR": "nome fantasia do cliente", "en": "client company name"},
+        "field_type": "string"
+      },
+      {
+        "key": "contato.cpf_cnpj",
+        "name": {"pt_BR": "cpf/cnpj do cliente", "en": "client taxvat"},
+        "description": {"pt_BR": "cpf/cnpj do cliente", "en": "client taxvat"},
+        "field_type": "string"
+      },
+      {
+        "key": "contato.endereco",
+        "name": {"pt_BR": "endereço do cliente", "en": "client address"},
+        "description": {"pt_BR": "endereço do cliente", "en": "client address"},
+        "field_type": "string"
+      },
+      {
+        "key": "contato.numero",
+        "name": {"pt_BR": "número do endereço do cliente", "en": "client address number"},
+        "description": {"pt_BR": "número do endereço do cliente", "en": "client address number"},
+        "field_type": "string"
+      },
+      {
+        "key": "contato.complemento",
+        "name": {"pt_BR": "complemento do endereço do cliente", "en": "client address complement"},
+        "description": {"pt_BR": "complemento do endereço do cliente", "en": "client address complement"},
+        "field_type": "string"
+      },
+      {
+        "key": "contato.bairro",
+        "name": {"pt_BR": "bairro do cliente", "en": "client address neighborhood"},
+        "description": {"pt_BR": "bairro do cliente", "en": "client address neighborhood"},
+        "field_type": "string"
+      },
+      {
+        "key": "contato.cep",
+        "name": {"pt_BR": "cep do cliente", "en": "client zip address"},
+        "description": {"pt_BR": "cep do cliente", "en": "client zip address"},
+        "field_type": "string"
+      },
+      {
+        "key": "contato.cidade",
+        "name": {"pt_BR": "cidade do cliente", "en": "client zip address"},
+        "description": {"pt_BR": "cidade do cliente", "en": "client zip address"},
+        "field_type": "string"
+      },
+      {
+        "key": "contato.uf",
+        "name": {"pt_BR": "uf do cliente", "en": "client state"},
+        "description": {"pt_BR": "uf do cliente", "en": "client state"},
+        "field_type": "string"
+      },
+      {
+        "key": "contato.email",
+        "name": {"pt_BR": "email do cliente", "en": "client email"},
+        "description": {"pt_BR": "email do cliente", "en": "client email"},
+        "field_type": "string"
+      },
+      {
+        "key": "contato.situacao",
+        "name": {"pt_BR": "situação do cliente", "en": "client status"},
+        "description": {"pt_BR": "situação do cliente", "en": "client status"},
+        "field_type": "string"
+      },
+      {
+        "key": "contato.id_vendedor",
+        "name": {"pt_BR": "id do vendedor vinculado ao cliente", "en": "id of the seller of the client"},
+        "description": {"pt_BR": "id do vendedor vinculado ao cliente", "en": "id of the seller of the client"},
+        "field_type": "string"
+      },
+      {
+        "key": "contato.nome_vendedor",
+        "name": {"pt_BR": "nome do vendedor vinculado ao cliente", "en": "name of the seller of the client"},
+        "description": {"pt_BR": "nome do vendedor vinculado ao cliente", "en": "name of the seller of the client"},
+        "field_type": "string"
+      },
+      {
+        "key": "contato.data_criacao",
+        "name": {"pt_BR": "data de criação do cliente", "en": "creation date of the client"},
+        "description": {"pt_BR": "data de criação do cliente", "en": "creation date of the client"},
+        "field_type": "string"
+      }
+    ]
+  },
+  "trigger_type": "polling",
+  "base_datetime_filter": {
+    "field": "dataCriacao",
+    "format": "%d/%m/%Y %H:%M:%S"
+  },
+  "configuration_fields": [],
+  "request": {
+    "method_name": "contatos.pesquisa.php?formato=JSON",
+    "params": {
+      "dataCriacao": "{base_datetime_filter}"
+    },
+    "response_field": "retorno.contatos",
+    "error_fields": ["retorno.erros.erro"]
+  }
+}

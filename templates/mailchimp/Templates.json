@@ -1,0 +1,20 @@
+[
+  {
+    "app_source": "tinyerp",
+    "app_target": "mailchimp",
+    "filters": [[]],
+    "mapper": [
+      {"key": "contato.email", "content": "{{email}}"}
+    ],
+    "trigger_key": "new_client",
+    "action_key": "subscribe_email",
+    "name": {
+      "pt_BR": "A cada novo cliente no TinyERP, cadastrar em uma lista do Mailchimp.",
+      "en": "For each new client in TinyERP, add in a Mailchimp list."
+    },
+    "description": {
+      "why_integrate": [{"pt_BR": "TinyERP....", "en": "TinyERP...."}],
+      "how_it_works": [{"pt_BR": "TinyERP....", "en": "TinyERP...."}]
+    }
+  }
+]
