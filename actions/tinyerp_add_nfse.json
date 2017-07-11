@@ -228,7 +228,7 @@
   },
   "request": {
     "method_name": "nota.servico.incluir.php?formato=JSON&nota=\"{\"nota_servico\":{\"cliente\":{\"nome\":{cliente.nome},\"cpf_cnpj\":{cliente.cpf_cnpj},\"endereco\":{cliente.endereco},\"numero\":{cliente.numero},\"complemento\":{cliente.complemento}},\"servico\":{\"descricao\":{servico.descricao},\"valor_servico\":{servico.valor_servico},\"descontar_iss_total\":{servico.descontar_iss_total}}}}\"",
-    "response_field": ["retorno.registros"],
+    "response_field": "retorno.registros",
     "error_fields": ["retorno.registros.registro.erros.erro"],
     "json_api": true
   }
