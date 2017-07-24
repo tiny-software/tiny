@@ -13,8 +13,12 @@
       "en": "For each new client in TinyERP, add in a Mailchimp list."
     },
     "description": {
-      "why_integrate": [{"pt_BR": "TinyERP....", "en": "TinyERP...."}],
-      "how_it_works": [{"pt_BR": "TinyERP....", "en": "TinyERP...."}]
+      "why_integrate": [
+        {"pt_BR": "Facilitar o envio de e-mail marketing para clientes incluídos no TinyERP.", "en": ""}
+      ],
+      "how_it_works": [
+        {"pt_BR": "A pluga consulta periodicamente a API do TinyERP para verificar os novos clientes.", "en": ""},
+        {"pt_BR": "Cada cliente novo é incluído em uma lista no MailChimp.", "en": ""}]
     }
   }
 ]

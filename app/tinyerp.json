@@ -3,9 +3,8 @@
   "app_id": "tinyerp",
   "color": "",
   "description": {
-     "pt_BR": "TinyERP...",
-     "en": "O TinyERP..."
-    },
+     "pt_BR": "O TinyERP é o complemento ideal para lojas virtuais. Funciona como backoffice e oferece eficiência e agilidade na operação, além de integrar com as principais plataformas de e-commerce do mercado"
+  },
   "website": "https://www.tiny.com.br/",
   "signup_url": "https://www.tiny.com.br/site/precos",
   "api_base_uri": {
@@ -28,13 +27,21 @@
       {"name": "token", "label": "Token API", "type": "text", "validations": [{"name": "max_length", "value": 40}]}
     ],
     "tutorial": {
-      "link": "Onde encontrar o Token API no TinyERP ?",
+      "link": "Passos para geração do Token",
       "steps": [
-        {
-          "title": {"pt_BR": "Passo 1", "en": ""},
-          "content": {"pt_BR": "Acesse TinyERP...", "en": ""}
-        }
-      ]
+          {"title": {"pt_Br": "Passo 1", "en": ""},
+           "content": {"pt_Br": "Acesse Início <num>a</num> &rarr; Extensões do Tiny <num>b</num> &rarr; Clique sobre a extensão \"Token API\" <num>c</num>.", "en": ""},
+           "img_url": {"pt_Br": "https://www.tiny.com.br/help-content/images/help-token-0.png", "en": ""}},
+          {"title": {"pt_Br": "Passo 2", "en": ""},
+           "content": {"pt_Br": "Clique em \"Instalar\" e após isso, confirme a instalação da extenão.", "en": ""},
+           "img_url": {"pt_Br": "https://www.tiny.com.br/help-content/images/help-token-1.png", "en": ""}},
+          {"title": {"pt_Br": "Passo 3", "en": ""},
+           "content": {"pt_Br": "Agora, acesse Vendas <num>a</num> &rarr; Configurações <num>b</num> &rarr; Aba E-commerce <num>c</num> &rarr; Clique em \"Token API\" <num>d</num>.", "en": ""},
+           "img_url": {"pt_Br": "https://www.tiny.com.br/help-content/images/help-token-2.png", "en": ""}},
+          {"title": {"pt_Br": "Passo 4", "en": ""},
+           "content": {"pt_Br": "A seguir, é possível visualizar o Token API <num>a</num> ou Gerar Token API <num>b</num>.", "en": ""},
+           "img_url": {"pt_Br": "https://www.tiny.com.br/help-content/images/help-token-3.png", "en": ""}}
+        ]
     }
   }
 }

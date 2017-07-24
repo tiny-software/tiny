@@ -133,6 +133,6 @@
       "dataCriacao": "{base_datetime_filter}"
     },
     "response_field": "retorno.contatos",
-    "error_fields": ["retorno.erros.erro"]
+    "error_fields": ["retorno.erros"]
   }
 }

@@ -24,8 +24,15 @@
       "en": "For every approved payment on IUGU, generate a NFS-e on TinyERP"
     },
     "description": {
-      "why_integrate": [{"pt_BR": "", "en": ""}],
-      "how_it_works": [{"pt_BR": "", "en": ""}]
+      "why_integrate": [{
+          "pt_BR": "Permitir a emissão de notas fiscais de serviço a partir dos pagamentos aprovados na iugu",
+          "en": ""
+      }],
+      "how_it_works": [
+        {"pt_BR": "A pluga monitora os pagamentos na sua conta da iugu.", "en": ""},
+        {"pt_BR": "Quando um pagamento for aprovado na Iugu, nós incluiremos uma nota de serviço no TinyERP.", "en": ""},
+        {"pt_BR": "A nota fiscal estará disponível em \"Serviços -> Notas de Serviço\" para emissão.", "en": ""}
+      ]
     }
   }
 ]
